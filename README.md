@@ -13,3 +13,11 @@ sudo ln -s /usr/local/cuda-12.5 /usr/local/cuda<br>
 echo 'export PATH=/usr/local/cuda-12.5/bin:$PATH' >> ~/.bashrc<br>
 echo 'export LD_LIBRARY_PATH=/usr/local/cuda-12.5/lib64:$LD_LIBRARY_PATH' >> ~/.bashrc<br>
 source ~/.bashrc<br>
+
+nvcc -V<br>
+nvcc: NVIDIA (R) Cuda compiler driver<br>
+Copyright (c) 2005-2024 NVIDIA Corporation<br>
+Built on Thu_Jun__6_02:18:23_PDT_2024<br>
+Cuda compilation tools, release 12.5, V12.5.82<br>
+Build cuda_12.5.r12.5/compiler.34385749_0<br>
+
