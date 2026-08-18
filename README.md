@@ -26,4 +26,6 @@ Build cuda_12.5.r12.5/compiler.34385749_0<br>
 
 # Install cuDNN
 sudo apt-get install -y cudnn-cuda-12<br>
+sudo ln -sf /usr/include/cudnn*.h /usr/local/cuda-12.5/include/<br>
+sudo ln -sf /usr/lib/x86_64-linux-gnu/libcudnn* /usr/local/cuda-12.5/lib64/<br>
 
