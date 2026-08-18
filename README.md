@@ -8,4 +8,5 @@ sudo apt-get update<br>
 sudo apt-get -y install cuda-toolkit-12-5<br>
 sudo apt-get install -y cuda-drivers<br>
 sudo apt install nvidia-cuda-toolkit<br>
-
+sudo rm -f /usr/local/cuda<br>
+sudo ln -s /usr/local/cuda-12.5 /usr/local/cuda<br>
