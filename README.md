@@ -29,3 +29,18 @@ sudo apt-get install -y cudnn-cuda-12<br>
 sudo ln -sf /usr/include/cudnn*.h /usr/local/cuda-12.5/include/<br>
 sudo ln -sf /usr/lib/x86_64-linux-gnu/libcudnn* /usr/local/cuda-12.5/lib64/<br>
 
+# Tes apakah GPU bisa digunakan
+sudo apt-get update<br>
+sudo apt-get install -y python3-pip python3-venv<br>
+python3 -m venv test_env<br>
+source test_env/bin/activate<br>
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124<br>
+python3 -c "import torch; print('CUDA Available:', torch.cuda.is_available()); print('Device Name:', torch.cuda.get_device_name(0)); print('CUDA Version (PyTorch):', torch.version.cuda); print('cuDNN Version:', torch.backends.cudnn.version()); print('Tensor Test:', torch.rand(3, 3).cuda())"<br><br>
+
+CUDA Available: True<br>
+Device Name: NVIDIA GeForce RTX 3050<br>
+CUDA Version (PyTorch): 12.4 (atau 12.x)<br>
+cuDNN Version: 90100 (atau 9.x.x)<br>
+Tensor Test: tensor([[...]], device='cuda:0')<br>
+
+
