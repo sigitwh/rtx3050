@@ -1,6 +1,9 @@
 # GPU RTX3050
 Install GPU RTX 3050 di Ubuntu 22.04.5 LTS
 
+# Download Ubuntu 22.04.5 Server
+https://releases.ubuntu.com/jammy/ubuntu-22.04.5-live-server-amd64.iso
+
 # Install CUDA 12.5
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-keyring_1.1-1_all.deb<br>
 sudo dpkg -i cuda-keyring_1.1-1_all.deb<br>
