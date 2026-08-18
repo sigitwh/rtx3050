@@ -21,3 +21,6 @@ Built on Thu_Jun__6_02:18:23_PDT_2024<br>
 Cuda compilation tools, release 12.5, V12.5.82<br>
 Build cuda_12.5.r12.5/compiler.34385749_0<br>
 
+# Install cuDNN
+sudo apt-get install -y cudnn-cuda-12<br>
+
