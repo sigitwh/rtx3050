@@ -7,4 +7,5 @@ sudo dpkg -i cuda-keyring_1.1-1_all.deb<br>
 sudo apt-get update<br>
 sudo apt-get -y install cuda-toolkit-12-5<br>
 sudo apt-get install -y cuda-drivers<br>
+sudo apt install nvidia-cuda-toolkit<br>
 
